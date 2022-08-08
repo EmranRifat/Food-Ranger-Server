@@ -10,11 +10,11 @@ const port = process.env.PORT || 5000;
 // user: dbuser1
 // pass:xXkEmUlaz1h7KUJ2
 app.use(
-  cors({ origin: "*", methods: ["GET", "POST", "PUT", "PATCH", "DELETE"] }) // for handling CORS policy error
+  cors({ origin: "*", methods: ["GET", "POST", "PUT", "PATCH", "DELETE"] }) 
   );
 
-app.use(
-  cors({ origin:"https://food-village-6c8a6.web.app"}));
+// app.use(
+//   cors({ origin:"https://food-village-6c8a6.web.app"}));
 
 
 
