@@ -13,8 +13,8 @@ app.use(
   cors({ origin: "*", methods: ["GET", "POST", "PUT", "PATCH", "DELETE"] }) 
   );
 
-// app.use(
-//   cors({ origin:"https://food-village-6c8a6.web.app"}));
+app.use(
+  cors({ origin:"https://food-village-6c8a6.web.app"}));
 
 
 
