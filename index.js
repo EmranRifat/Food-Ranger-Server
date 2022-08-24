@@ -167,6 +167,7 @@ async function run() {
           image: food.img,
           foodName: food.name,
           user: user.email,
+          price:food.price,
           token: order.token,
           status: order.status,
         });
