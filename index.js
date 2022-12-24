@@ -60,7 +60,8 @@ function verifyJWT(req, res, next) {
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
+
     const foodCollection = client.db("foodExpress").collection("foods");
     const reviewCollection = client.db("foodExpress").collection("review");
     const orderCollection = client.db("foodExpress").collection("order");
