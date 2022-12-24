@@ -162,6 +162,7 @@ async function run() {
       for (const order of orders) {
         const foodquery = { _id: ObjectID(order.foodId) };
         const food = await foodCollection.findOne(foodquery);
+        // console.log(food);
         ordersData.push({
           _id: order._id,
           image: food.img,
@@ -190,6 +191,7 @@ async function run() {
         ordersData.push({
           _id: order._id,
           image: food.img,
+          price:food.price,
           foodName: food.name,
           user: user.email,
           token: order.token,
